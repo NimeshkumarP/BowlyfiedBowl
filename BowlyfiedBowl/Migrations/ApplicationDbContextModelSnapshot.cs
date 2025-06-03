@@ -21,7 +21,7 @@ namespace BowlyfiedBowl.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("BolyfiedApp.Models.Bowl", b =>
+            modelBuilder.Entity("BolyfiedBowl.Models.Bowl", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
