@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BolyfiedApp.Data;
-using BolyfiedApp.Models;
+using BolyfiedBowl.Models;
 using System.Linq;
 
 namespace BolyfiedApp.Controllers

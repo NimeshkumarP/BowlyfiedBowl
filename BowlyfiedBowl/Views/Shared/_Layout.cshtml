@@ -11,6 +11,12 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div style="padding:10px;">
+                <a href="/">
+                    <img src="~/images/bolyfied-logo.png" alt="Bolyfied Logo" style="height:60px;" />
+                </a>
+            </div>
+
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BowlyfiedBowl</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -47,3 +53,11 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+>
+<title>Bolyfied - Bowl Store</title>
+
+<nav>
+    <a href="/">Home</a> |
+    <a href="/Bowls">Bowl Catalogue</a> |
+    <a href="/Home/About">About Us</a>
+</nav>
