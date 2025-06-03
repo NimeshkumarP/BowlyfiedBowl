@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<BolyfiedApp.Models.Bowl>
+
+<h2>Bolyfied Bowl Collection</h2>
+<a href="/Bowl/Create">Add New Bowl</a>
+
+<table border="1">
+    <tr>
+        <th>Material</th>
+        <th>Capacity</th>
+        <th>Dimensions</th>
+        <th>Weight</th>
+        <th>Color Options</th>
+        <th>Microwave Safe</th>
+        <th>Dishwasher Safe</th>
+        <th>Made In</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Material</td>
+            <td>@item.Capacity</td>
+            <td>@item.Dimensions</td>
+            <td>@item.Weight</td>
+            <td>@item.ColorOptions</td>
+            <td>@item.MicrowaveSafe</td>
+            <td>@item.DishwasherSafe</td>
+            <td>@item.MadeIn</td>
+        </tr>
+    }
+</table>
