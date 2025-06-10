@@ -1,4 +1,4 @@
-using BolyfiedApp.Data;
+using BowlyfiedBowl.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

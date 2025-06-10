@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using BolyfiedApp.Data;
-using BolyfiedApp.Models;
+using BowlyfiedBowl.Data;
+using BowlyfiedBowl.Models;
 using System.Linq;
 
-namespace BolyfiedApp.Controllers
+namespace BowlyfiedBowl.Controllers
 {
-    public class BowlController : Controller
+    public class BowlyfiedBowl : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public BowlController(ApplicationDbContext context)
+        public BowlyfiedBowl(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -26,15 +26,15 @@ namespace BolyfiedApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Bowl bowl)
+        public IActionResult Create(Bowl bowls)
         {
             if (ModelState.IsValid)
             {
-                _context.Bowls.Add(bowl);
+                _context.Bowls.Add(bowls);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(bowl);
+            return View(bowls);
         }
     }
 }

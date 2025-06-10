@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using BolyfiedApp.Models;
+using BowlyfiedBowl.Models;
 using System.Collections.Generic;
 
-namespace BolyfiedApp.Data
+namespace BowlyfiedBowl.Data
 {
     public class ApplicationDbContext : DbContext
     {

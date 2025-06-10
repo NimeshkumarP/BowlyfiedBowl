@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BolyfiedApp.Models
+namespace BowlyfiedBowl.Models
 {
     public class Bowl
     {
