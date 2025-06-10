@@ -1,4 +1,6 @@
-﻿namespace BolyfiedBowl.Models  // ✅ Use your real project name!
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BolyfiedBowl.Models  // ✅ Use your real project name!
 {
     public class Bowl
     {
